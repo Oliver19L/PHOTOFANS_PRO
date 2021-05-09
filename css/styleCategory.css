@@ -1,0 +1,17 @@
+
+.contenedor_flex
+{
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    background-color: aqua;
+    align-items: center;
+    align-content: center;
+}
+
+.contenedor_flex div
+{
+    background-color: brown;
+    width: 40px;
+    margin: 10px;
+    padding: 5px;
+}

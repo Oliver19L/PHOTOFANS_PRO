@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+
+
+*{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+}
+
+.cabecera{
+    
+      background-color: #01040f;
+      text-align: right; 
+      width: 100%;
+
+}
+
+.contenedor{
+     
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     height: 50px;
+  
+      
+}
+
+.contenedor input{
+      height: 60px;
+}
+.nave ul{
+      margin: 0px 10px;
+      padding: 0;
+      list-style: none;
+      
+}
+.nave ul li{
+      display: inline-block;
+      
+}
+
+.nave ul li a{
+      color: aliceblue;
+      display: block;
+      padding: 10px 15px;
+      margin: 0px 3px;
+      text-decoration: none;
+      transition: all 0.4s linear;
+      border-radius: 10px;}
+
+.nave ul li a:hover{
+      background-color:aliceblue;
+      color: black;
+}
+
+
+header h1{
+      letter-spacing: 3px;
+      color: aliceblue;
+      text-align: left;
+      padding: 15px;
+}
+
+@media  screen and (max-width: 500px) {
+
+      .cabecera{
+            height: 70px;
+           
+      }
+
+      .contenedor{
+            height: 70px;
+           
+      }
+
+      .contenedor input{
+            height: 80px;
+      }
+
+}
+
+
+
+.contenedor_img{
+      text-align: center;
+      background-image: url('/imagenes/Noruega-Fondo.jpg'); 
+      width: 100%;
+      background-size: cover;
+      height: 570px;
+      
+}
+
+.buscador h1{
+            color: aliceblue;
+            font-size: 70px;
+}
+
+.buscador h2{
+      color: aliceblue;
+      font-size: 30px;
+      margin-bottom: 30px;
+}
+
+.buscador{
+    /*  position: relative;*/
+      width: 100%px;
+     /* margin: auto;*/
+      padding-top: 100px;
+      padding-left: 90px;
+      padding-right: 90px;
+    /*  align-items: center;*/
+     
+}
+
+
+.Buscador_Adentro{
+      align-items: center;
+      margin: auto;
+      width: 620px;
+      background-color:white;
+      border: 1px solid silver;
+      border-radius: 15px;
+    
+}
+
+
+
+
+.i{
+      padding: 10px;
+      margin: 10px;
+}
+
+.buscador input{
+      width: 578px ;
+      height: 50px;
+      padding: 0px 15px;
+      font-size: 15px;
+      color: black;
+      outline: none;
+      border: none;
+      border-radius: 15px;
+      
+}
+
+@media screen and (max-width: 800px) {
+
+      .contenedor_img{
+           
+            margin: 0;
+            padding: 0;
+      }
+
+      .Buscador_Adentro{
+            width:350px;
+      }
+
+      .buscador input{
+            width: 300px;
+      }
+      
+      .buscador h1{
+            color: aliceblue;
+            font-size: 55px;
+      }
+
+      .buscador h2{
+      color: aliceblue;
+      font-size: 25px;
+      
+      }
+
+}
+
+@media screen and (max-width: 570px) {
+
+      
+
+      .buscador{
+            
+            width: 100%;
+            margin:none;
+      }
+
+      .Buscador_Adentro{
+            width: 234px;
+            justify-content: center;
+      }
+
+      .buscador input{
+            width: 200px;
+      }
+      
+      .buscador h1{
+              
+            color: aliceblue;
+            font-size: 40px;
+            
+            
+      }
+
+      .buscador h2{
+      margin-top: 15px;
+      color: aliceblue;
+      font-size: 25px;
+      
+      }
+
+}
+
+@media screen and (max-width: 200) {
+
+      .Buscador_Adentro{
+            width:100px;
+            justify-content: center;
+      }
+
+      .buscador input{
+            width: 80px;
+            justify-content: center;
+      }
+      
+      .buscador h1{
+            color: aliceblue;
+            font-size: 20px;
+      }
+
+      .buscador h2{
+      color: aliceblue;
+      font-size: 10px;
+      
+      }
+
+}
+
+
+img{
+      width: 100%;
+      border-radius: 10px;
+      
+}
+ 
+.fila{
+     
+      display: flex;
+      padding: 5px;
+      flex-wrap: wrap;
+      
+      
+      
+}
+
+.columna {
+     
+      flex: 25px;
+      padding: 5px;
+      margin-top: 5px;
+}
+
+@media (max-width:900px){
+      .columna{
+            flex: 50%;
+      }
+}
+
+@media (max-width:500px){
+      .columna{
+            flex: 100%;
+      }
+}
+
+
+
+.footer{
+
+     width: 100%;
+     background-color: #01040f;
+     display: flex;
+     margin: auto;
+     color: aliceblue;
+     font-family: 'Montserrat', sans-serif;
+     justify-content: center;
+    
+}
+
+
+
+.Columna1Footer{
+      max-width: 400px;
+}
+
+.Columna1Footer,h3{
+      text-align: center;
+      padding: 5px;
+      margin: auto;
+}
+
+.Columna1Footer , p{
+      margin: 5px;
+      padding: 5px;
+      margin-left: 10px;
+}
+
+
+
+.Columna2Footer{
+      width: 400px;
+}
+
+.Columna2Footer,h3{
+      padding: 5px;
+      margin-left: 10px;
+    
+      text-align: center;
+}
+
+.Columna2Footer .FilaSocial{
+      margin-top: 10px;
+      display: flex;
+}
+
+.FilaSocial img{
+      width: 40px;
+      height: 40px;
+      margin-left: 125px;
+}
+
+.Columna3Footer{
+     justify-content: center;
+    width: 400px;
+      
+}
+
+.Columna3Footer,h3{
+      padding: 5px;
+      margin-left: 10px;
+      text-align: center;
+}
+
+.Columna3Footer , label{
+     
+      margin-left: 15px;
+      padding-top: 5px;
+      
+}
+
+.Ubicacion label{
+    
+      text-align: center;
+      margin-bottom: 10px;
+}
+
+.Ubicacion img{
+      
+      width: 30px;
+      height: 30px;
+}
+
+@media  screen and (max-width: 800px) {
+
+      .footer{
+            flex-wrap: wrap;
+      }
+      
+}
