@@ -39,12 +39,46 @@
                        <li><a href="/main/index.html">Inicio</a></li>
                        <li><a href="/main/explore.html">Categoria</a></li>
                        <li><a href="/main/upload.html">Subir</a></li>
-                       <li> <a href="/main/signup_signin.html">Iniciar sesion</a></li>
+                       <li> <a onclick="document.getElementById('loginSign').style.display='block'">Iniciar sesion</a></li>
                        <li> <a href="/main/signup_signin.html">UNETE</a></li>
                    </ul> 
                 </nav>
             </div>
         </header> 
+
+
+       
+            
+    
+        <div id="loginSign" class="modal">
+            <form class="modal-content animate" action="" method="post">
+               
+                <span onclick="document.getElementById('loginSign').style.display='none'" class="close" title="cerrar modal">&times;</span>
+                <div class="imgcontainer">
+                    <img src="/imagenes/logo 1.png" alt=" Img" class="img-login">
+                    
+                </div>
+    
+                <div class="container">
+                    
+    
+                    <input type="text" placeholder="Usuario" name="Usuario" required>
+                    <input type="password" placeholder="Contraseña" name="Password" required>
+    
+                    <button type="submit">Iniciar Sesion</button>
+                    <label>
+                        <input type="checkbox" checked="checked" name="renember"> recordarme
+                    </label>
+                </div>
+                <div class="container">
+                    <button type="button" class="cancelar">Cancelar</button>
+                    <span class="psw">Usted a olvidado su <a href="">Contraseña?</a></span>
+                </div>
+            
+            </form>
+    
+        </div>
+        
         
          <div class="contenedor_img">
                     <div class="buscador">
@@ -62,9 +96,9 @@
         
        <div class="fila">
                 <div class="columna">
-                    <img src="/imagenes/valentin-wallet-s1Iq2bRoR6Q-unsplash.jpg" > 
-                    <img src="/imagenes/photo-nic-co-uk-nic-SeWk1Xb3wIc-unsplash.jpg" > 
-                    <img src="/imagenes/gran-bóveda-del-mit-62234934.jpg" >
+                    <img src="/imagenes/1.jpg" > 
+                    <img src="/imagenes/10 (1).jpeg" > 
+                    <img src="/imagenes/10 (2).jpeg" >
                     <img src="/imagenes/WhatsApp Image 2021-04-27 at 8.52.51 PM.jpeg"  >
                     <img src="/imagenes/WhatsApp Image 2021-04-27 at 8.53.26 PM.jpeg"  >
                     <img src="/imagenes/WhatsApp Image 2021-04-27 at 8.53.49 PM.jpeg"   >
@@ -170,6 +204,7 @@
             <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
             <script src="/JavaScript/precarga.js"></script>
             <script src="/JavaScript/Calendario.js"></script>
+            <script src="/JavaScript/VentanaModal.js"></script>
     
         
            

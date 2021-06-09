@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 @import url(Preloader.css);
 @import url(Calendario.css);
-
+@import url(VentanaIniSesion.css);
 
 *{
       box-sizing: border-box;
@@ -49,13 +49,18 @@
       padding: 10px 15px;
       margin: 0px 3px;
       text-decoration: none;
-      transition: all 0.4s linear;
+      transition: all 1s linear;
       border-radius: 10px;}
 
 .nave ul li a:hover{
       background-color:aliceblue;
       color: black;
+      cursor: pointer;
 }
+
+
+
+
 
 
 header h1{
