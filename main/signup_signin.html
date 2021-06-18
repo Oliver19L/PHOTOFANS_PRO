@@ -5,48 +5,110 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/css/styleMain.css">
+    <link rel="stylesheet" type="text/css" href="/css/Unete.css">
+    
+    <script src="https://kit.fontawesome.com/3b3d20e12e.js" crossorigin="anonymous"></script>
     <title>PhotoFans Iniciar Sesion</title>
 </head>
 <body>
     <header class="cabecera">
         <div class="contenedor"> 
-            <input type="image" src="/imagenes/logo_transparent 2.png ">
+            <input type="image" src="/imagenes/Logo 1.png ">
            <!--<h1 >PhotoFans</h1>--> 
            
             <nav class="nave">
+                
                <ul>
+                   <li></li>
                    <li><a href="/main/index.html">Inicio</a></li>
                    <li><a href="/main/explore.html">Categorias</a></li>
                    <li><a href="/main/upload.html">Subir</a></li>
-                   <li> <a href="/main/signup_signin.html">Iniciar sesion</a></li>
+                   <li> <a onclick="document.getElementById('loginSign').style.display='block'">Iniciar sesion</a></li>
                    <li> <a href="/main/signup_signin.html">UNETE</a></li>
                </ul> 
             </nav>
         </div>
     </header>
-        <div  class="forms-Contenido">
-            <div class="signup-signin">
-                <form action="" class="sign-in-form">
-                    <h2 class="titulo">Sign up</h2>
-                    <div class="input-field">
-                        
-                        <input type="text" placeholder="Nombre de Usuario">
-                    </div>
-                    <div class="input-field">
-                       
-                        <input type="email" placeholder="E-mail">
-                    </div>
-                    <div class="input-field">
-                      
-                        <input type="password" placeholder="Contraseña">
-                    </div>
-                     <input type="submit" value="Login" class="btn solid">
-                     <p>O inicia sesion con plataformas sociales</p>
-                     
-                    
-                </form>
+
+
+    <div class="contenedores1">
+        <div class="contenedorhijo">
+            <div class="contenedorimagenes">
+                <img src="/imagenes/computadora.jpeg" alt="">
             </div>
+            <div class="contenedorletrauno">
+                <h1>Solo quiero descargar fotos Gratis</h1>
+            </div>
+            <button class="botonesUp" onclick="document.getElementById('ventanaEmergente').style.display='block'">Unirme</button>
         </div>
+        <div class="contenedorhijo">
+            <div class="contenedorimagenes">
+                <img src="/imagenes/Camara.jpeg" alt="">
+            </div>
+            <div class="contenedorletrados">
+                <p>Quiero compartir mis fotos 
+                    con todo el mundo</p>
+            </div>
+            <button  class="botonesUp" onclick="document.getElementById('ventanaEmergente').style.display='block'">Unirme</button>
+        </div>
+    </div>
+
+    
+    
+    <div class="container animate" id="ventanaEmergente"> 
+        <div class="header">
+            <h2 class="nombre">Crear Una Cuenta</h2>
+            <span onclick="document.getElementById('ventanaEmergente').style.display='none'" class="close" title="cerrar" >&times;</span>
+
+        </div>
+        <form class="form animate"  id="form">
+
+            <div class="form-control ">
+                <label> Nombre de Usuario</label>
+                <input type="text" placeholder="Oliver123" id="username">
+                <i class=" fas fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <small>Mensaje de Error</small>
+            </div>
+            <div class="form-control ">
+                <label> Email</label>
+                <input type="email" placeholder="oliver123@uni.com" id="email">
+                <i class=" fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Mensaje de Error</small>
+            </div>
+            <div class="form-control ">
+                <label> Contraseña</label>
+                <input type="password" placeholder="Contraseña" id="password">
+                <i class=" fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Mensaje de Error</small>
+            </div>
+            <div class="form-control ">
+                <label> Verificar Contraseña</label>
+                <input type="password" placeholder="Verificar Contraseña" id="password2">
+                <i class=" fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Mensaje de Error</small>
+            </div>
+            <div class="flexo">
+                <div  onclick="limpiar()" class="limpiarbutton">Limpiar</div>
+                <button class="buttonSubmit" >Enviar</button>
+            </div>
+           
+        </form>
+    </div> 
+
+    
+   
+
+    
+        
+
+      
+
+
+
 
         <div class="calendario">
             <table id="calendar">
@@ -60,8 +122,20 @@
         <tbody>
         </tbody>
     </table>
+            <button><a href="/main/video.html"> Video</a></button>
         </div>
+
+        
+        <div class="Reloj">
+            <h1 class="main_time" id="time">
+                
+            </h1>
+        </div>
+
     
         <script src="/JavaScript/Calendario.js"></script>
+        <script src="/JavaScript/VentanaModal.js"></script>
+        <script src="/JavaScript/Reloj.js"></script>
+        <script src="/JavaScript/SingUpValidaciones.js"></script>
 </body>
 </html>

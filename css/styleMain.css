@@ -2,6 +2,9 @@
 @import url(Preloader.css);
 @import url(Calendario.css);
 @import url(VentanaIniSesion.css);
+@import url(BotonHaciaArriba.css);
+@import url(Reloj.css);
+
 
 *{
       box-sizing: border-box;
@@ -30,7 +33,7 @@
 }
 
 .contenedor input{
-      height: 60px;
+      height: 50px;
 }
 .nave ul{
       margin: 0px 10px;

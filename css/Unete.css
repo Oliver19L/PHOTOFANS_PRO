@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap');
+
+
+.contenedores1{
+    justify-content: center;
+    display: flex;
+    margin: 80px;
+}
+
+.contenedorhijo{
+    /*background-color:chartreuse;*/
+    border: 1px dashed #d3d3d3;
+    margin: 15px;
+    border-radius: 14px;
+}
+
+.contenedorimagenes{
+            width: 500px;
+            height: 250px;
+            margin: 15px;
+
+}
+
+.contenedorimagenes i{
+    justify-content: center;
+    
+}
+
+
+.contenedorletrauno{
+    font-size: 11px;
+    text-align: center;
+	margin-bottom: 15px;
+}
+
+.contenedorletrados{
+    font-size: 22px;
+    text-align: center;
+}
+
+.botonesUp{
+	background-color: #393e46;
+    color:whitesmoke;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 180px;
+	margin-bottom: 15px;
+    width: 100%;
+    max-width: 10rem;
+    cursor: pointer;
+	
+}
+
+.botonesUp:hover{
+    background-color: #3fa5c4;
+    color:white;
+    opacity: 0.8;
+}
+
+.container {
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	overflow: hidden;
+	width: 400px;
+	max-width: 100%;
+	display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    overflow: auto;
+	margin-left: 545px;
+}
+
+.header {
+	border-bottom: 1px solid #f0f0f0;
+	background-color: #f7f7f7;
+	padding: 15px 15px;
+	display: flex;
+	margin-bottom: 5px;
+	border-radius: 5px;
+}
+
+.header h2 {
+	margin-right: 97px;;
+	margin-top: 19px;
+}
+
+.form {
+	padding: 30px 40px;	
+	border-radius: 5px;
+}
+
+.form-control {
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+	position: relative;
+}
+
+.form-control label {
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+.form-control input {
+	border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 10px;
+	width: 100%;
+	margin:5px;
+}
+
+.form-control input:focus {
+	outline: 0;
+	border-color: #777;
+}
+
+.form-control.success input {
+	border-color: #2ecc71;
+}
+
+.form-control.error input {
+	border-color: #e74c3c;
+}
+
+.form-control i {
+	visibility: hidden;
+	position: absolute;
+	top: 40px;
+	right: 10px;
+}
+
+.form-control.success i.fa-check-circle {
+	color: #2ecc71;
+	visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+	color: #e74c3c;
+	visibility: visible;
+}
+
+.form-control small {
+	color: #e74c3c;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	visibility: hidden;
+}
+
+.form-control.error small {
+	visibility: visible;
+}
+
+.flexo{
+	display: flex;
+	
+}
+
+.buttonSubmit {
+	background-color: #393e46;
+    color:whitesmoke;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    max-width: 10rem;
+    cursor: pointer;
+	margin-left: 5px;
+}
+
+.limpiarbutton{
+	background-color: #393e46;
+    color:whitesmoke;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    max-width: 8rem;
+    cursor: pointer;
+	margin-right: 5px;
+	text-align: center;
+	font-size: 13px;
+}
+
+.floating-btn {
+	border-radius: 26.5px;
+	background-color: #001F61;
+	border: 1px solid #001F61;
+	box-shadow: 0 16px 22px -17px #03153B;
+	color: #fff;
+	cursor: pointer;
+	font-size: 16px;
+	line-height: 20px;
+	padding: 12px 20px;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 999;
+}
+
+.floating-btn:hover {
+	background-color: #ffffff;
+	color: #001F61;
+}
+
+.floating-btn:focus {
+	outline: none;
+}
+
+.floating-text {
+	background-color: #001F61;
+	border-radius: 10px 10px 0 0;
+	color: #fff;
+	font-family: 'Muli';
+	padding: 7px 15px;
+	position: fixed;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	z-index: 998;
+}
+
+.floating-text a {
+	color: #FF7500;
+	text-decoration: none;
+}
+
+@media screen and (max-width: 480px) {
+
+	.social-panel-container.visible {
+		transform: translateX(0px);
+	}
+	
+	.floating-btn {
+		right: 10px;
+	}
+}
+
+
+.close{
+	right: 500px;
+    top: 0;
+    color: #000;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus{
+    color: red;
+    cursor: pointer;
+}
+
+.animate{
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s;
+}
+
+@-webkit-keyframes animatezoom{
+    from {-webkit-transform: scale(0)}
+    to{-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom{
+    from{transform: scale(0)}
+    to {transform: scale(1)}
+}

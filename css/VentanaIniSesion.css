@@ -13,9 +13,9 @@ input[type=text], input[type=password]{
    
 }
 
-button{
+.botonSingup{
     background-color: #393e46;
-    color: #f3f3f3;
+    color:whitesmoke;
     text-transform: uppercase;
     border: none;
     border-radius: 10px;
@@ -26,9 +26,9 @@ button{
     cursor: pointer;
 }
 
-button:hover{
-    background-color: #888a8d;
-    color: #203453;
+.botonSingup:hover{
+    background-color: #3fa5c4;
+    color:white;
     opacity: 0.8;
 }
 
@@ -116,4 +116,25 @@ span.psw{
 @keyframes animatezoom{
     from{transform: scale(0)}
     to {transform: scale(1)}
+}
+
+
+.Descubremas{
+    align-content: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    margin-left: 680px;
+    background-color: #393e46;
+    color:whitesmoke;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 10rem;
+    font-size: 20px;
+}
+
+.Descubremas:hover{
+    background-color: #3fa5c4;
+    color:white;
+    opacity: 0.8;
 }

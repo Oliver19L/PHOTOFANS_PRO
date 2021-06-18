@@ -1,0 +1,37 @@
+@font-face {
+    font-family: "DS-Digital";
+    src: url("../digital_clock_javascript_version1/DS-DIGIT.TTF") format('truetype');
+    
+}
+
+.Reloj {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    width: 100px;
+    height: 80px;
+    align-items: center;
+}
+
+.main_time {
+    font-family: "DS-Digital";
+    color:skyblue;
+    font-size: 2rem;
+    text-align: center;   
+    margin-top: 40px;
+}
+
+
+/* Desktop First approach */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1rem;
+        color: rgb(250, 250, 250);
+        text-align: center; 
+    }
+
+
+} 
+
