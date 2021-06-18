@@ -76,17 +76,39 @@ header h1{
 @media  screen and (max-width: 500px) {
 
       .cabecera{
-            height: 70px;
+            height: 100px;
            
       }
 
       .contenedor{
-            height: 70px;
+            height: 100px;
            
       }
 
       .contenedor input{
-            height: 80px;
+            height: 90px;
+      }
+
+}
+
+@media  screen and (max-width: 376px) {
+
+      .cabecera{
+            height: 110px;
+           
+      }
+
+      .contenedor{
+            height: 110px;
+           
+      }
+
+      .contenedor input{
+            height: 95px;
+      }
+
+      .nave ul li{
+            display: center;
       }
 
 }
@@ -132,19 +154,16 @@ header h1{
       background-color:white;
       border: 1px solid silver;
       border-radius: 15px;
-    
+      
 }
 
 
 
 
-.i{
-      padding: 10px;
-      margin: 10px;
-}
+
 
 .buscador input{
-      width: 578px ;
+      width: 550px ;
       height: 50px;
       padding: 0px 15px;
       font-size: 15px;
@@ -184,7 +203,7 @@ header h1{
 
 }
 
-@media screen and (max-width: 570px) {
+@media only screen and (max-width: 778px) {
 
       
 
@@ -200,7 +219,7 @@ header h1{
       }
 
       .buscador input{
-            width: 200px;
+            width: 150px;
       }
       
       .buscador h1{
@@ -220,26 +239,63 @@ header h1{
 
 }
 
-@media screen and (max-width: 200) {
+@media  screen and (max-width: 413) {
 
       .Buscador_Adentro{
-            width:100px;
+            width:120px;
             justify-content: center;
       }
 
       .buscador input{
-            width: 80px;
+            width: 70px;
             justify-content: center;
+            margin-bottom: 6px;
+            margin-right: 4px;
       }
       
       .buscador h1{
             color: aliceblue;
-            font-size: 20px;
+            font-size: 18px;
       }
 
       .buscador h2{
       color: aliceblue;
-      font-size: 10px;
+      font-size: 11px;
+      
+      }
+
+}
+
+@media  screen and (max-width: 376) {
+
+
+      
+      .Buscador_Adentro{
+            width: 100px;
+            justify-content: center;
+           
+            
+      }
+
+      .buscador input{
+            width: 60px;
+            justify-content: center;
+            
+           
+           
+      }
+      
+      .buscador h1{
+            color: aliceblue;
+            font-size: 5px;
+            
+      }
+
+      .buscador h2{
+      color: aliceblue;
+      font-size: 4px;
+     
+
       
       }
 
