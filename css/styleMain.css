@@ -19,21 +19,22 @@
       background-color: #01040f;
       text-align: right; 
       width: 100%;
-
+     
 }
 
 .contenedor{
      
      display: flex;
-     justify-content: space-between;
+  /*   justify-content: space-between;*/
      align-items: center;
-     height: 50px;
-  
-      
+     height: 70px;
+     
 }
 
 .contenedor input{
       height: 50px;
+      border-radius: 10%;
+      
 }
 .nave ul{
       margin: 0px 10px;
@@ -49,10 +50,10 @@
 .nave ul li a{
       color: aliceblue;
       display: block;
-      padding: 10px 15px;
-      margin: 0px 3px;
+      padding: 8px 12px;
+     /* margin: 0px 3px;*/
       text-decoration: none;
-      transition: all 1s linear;
+      transition: all 0.8s linear;
       border-radius: 10px;}
 
 .nave ul li a:hover{
@@ -348,7 +349,9 @@ img{
      color: aliceblue;
      font-family: 'Montserrat', sans-serif;
      justify-content: center;
-    
+      margin-top: 50px;
+      position: relative;
+      bottom: 0%;
 }
 
 

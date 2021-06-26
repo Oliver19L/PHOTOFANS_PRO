@@ -1,17 +1,140 @@
+body
+{
+    font-family: 'Montserrat', sans-serif;
+}
+.encabezado
+{
+    margin: 20px 20px 20px 100px;
+}
 
 .contenedor_flex
 {
     display: flex;
-    font-family: 'Montserrat', sans-serif;
-    background-color: aqua;
-    align-items: center;
-    align-content: center;
+    flex-flow: wrap row; /*(flex-wrap: wrap -cross axis) (flex-direction: row -main axis)*/;
+    align-items: center; /*alinea item en la fila del cross axis */
+    justify-content: space-around; /*alinea item en la fila del main axis // align-content: alinea filas respecto al contenedor */
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: white;
 }
 
-.contenedor_flex div
+.contenedor_flex input
 {
-    background-color: brown;
-    width: 40px;
-    margin: 10px;
-    padding: 5px;
+    text-align: center;
+    font-size:xx-large;
+    font-weight:bold;
+    letter-spacing: 1px;
+    color: white;
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    border-style: solid;
+    border-color:black;
+    border-radius: 10px;
+    margin: 30px;
+    
+}
+
+.contenedor_flex input:hover{
+    box-shadow: 10px black;
+}
+
+.contenedor_flex input:hover
+{
+    color: skyblue;
+    cursor:pointer;
+}
+
+.contenedor_flex input:active
+{
+    color: white;
+}
+
+.contenedor_flex .cat_anime
+{
+    background-image: url(/imagenes/IMG-Anime.jpg) ;
+    background-position: center;
+    background-size: cover;
+}
+
+
+    
+
+.contenedor_flex .cat_animal
+{
+    background-image: url(/imagenes/IMG-Animal-500x500.jpg) ;
+    background-position: center;
+    background-size: cover;
+}
+
+.contenedor_flex .cat_auto
+{
+    background-image: url(/imagenes/IMG-Auto.jpg) ;
+    background-position: center;
+    background-size: cover;
+}
+
+.contenedor_flex .cat_artista
+{
+    background-image: url(/imagenes/IMG-Artistajpg.jpg) ;
+    background-position: center;
+    background-size: cover;
+}
+
+.contenedor_flex .cat_arte
+{
+    background-image: url(/imagenes/IMG-Arte.jpg) ;
+    background-position: center;
+    background-size: cover;
+}
+
+.contenedor_flex .cat_amor
+{
+    background-image: url(/imagenes/IMG-Amor.jpg) ;
+    background-position: center;
+    background-size: cover;
+}
+
+.contenedor_flex .cat_deporte
+{
+    background-image: url(/imagenes/IMG-Deporte.jpg) ;
+    background-position: center;
+    background-size: cover;
+}
+
+.contenedor_flex .cat_motocicleta
+{
+    background-image: url(/imagenes/IMG-moto.jpg);
+        background-position: center;
+    background-size: cover;
+}
+
+.contenedor_flex .cat_musica
+{
+    background-image: url(/imagenes/IMG-Musica.jpg);
+        background-position: center;
+    background-size: cover;
+}
+
+.contenedor_flex .cat_naturaleza
+{
+    background-image: url(/imagenes/IMG-Naturaleza.jpg) ;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.contenedor_flex .cat_universo
+{
+    background-image: url(/imagenes/IMG-Universo.png) ;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.contenedor_flex .cat_tecnologia
+{
+    background-image: url(/imagenes/IMG-Tecnologia.jpg) ;
+    background-position: center;
+    background-size: cover;
 }

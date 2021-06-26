@@ -119,11 +119,11 @@ span.psw{
 }
 
 
-.Descubremas{
+.Descubremas {
     align-content: center;
     margin-bottom: 20px;
     padding: 10px;
-    margin-left: 680px;
+    margin-left: 610px;
     background-color: #393e46;
     color:whitesmoke;
     border: none;
@@ -131,6 +131,11 @@ span.psw{
     width: 100%;
     max-width: 10rem;
     font-size: 20px;
+}
+
+.Descubremas a{
+    color: blanchedalmond;
+    text-decoration: none;
 }
 
 .Descubremas:hover{

@@ -8,27 +8,12 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="/css/styleMain.css">
         <link rel="stylesheet" href="/main/styles.css">
-        <link rel="stylesheet" href="/css/BotonHaciaArriba.css">
+    
            
         </style>
     </head>
     <body class="cuerpo">
-        <div class="precarga" id="precargado"> 
-            <div class="lds-spinner">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>   
-        </div>
+     
 
         <header class="cabecera">
             <div class="contenedor"> 
@@ -47,12 +32,10 @@
             </div>
         </header> 
 
-
-       
             
     
         <div id="loginSign" class="modal">
-            <form class="modal-content animate" action="" method="post">
+            <form class="modal-content animate" action="perfil.html" method="post" target="_blank">
                
                 <span onclick="document.getElementById('loginSign').style.display='none'" class="close" title="cerrar modal">&times;</span>
                 <div class="imgcontainer">
@@ -61,18 +44,16 @@
                 </div>
     
                 <div class="container">
-                    
+                    <input type="text" placeholder="Usuario" name="Usuario"  id="usuario" required>
+                    <input type="password" placeholder="Contraseña" name="Password" id="contraseña" required>
     
-                    <input type="text" placeholder="Usuario" name="Usuario" required>
-                    <input type="password" placeholder="Contraseña" name="Password" required>
-    
-                    <button  class= "botonSingup" type="submit">Iniciar Sesion</button>
+                    <button  class= "botonSingup" type="submit" id="ingresar">Iniciar Sesion</button>
                     <label>
-                        <input type="checkbox" checked="checked" name="renember"> recordarme
+                        <input type="checkbox" checked="checked" name="renember" > recordarme
                     </label>
                 </div>
                 <div class="container">
-                    <button  class="botonSingup"type="button" class="cancelar">Cancelar</button>
+                    <button  class="botonSingup"  type="button" class="cancelar">Cancelar</button>
                     <span class="psw">Usted a olvidado su <a href="">Contraseña?</a></span>
                 </div>
             
@@ -88,7 +69,9 @@
                         <div class="Buscador_Adentro">
 
                             <input type="text" name="Buscar" id="buscador" placeholder="Buscar">
-                            <i class="bi bi-search"></i>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </svg>
                         </div>
                        
                     </div>      
@@ -158,71 +141,51 @@
 
                     
                     ><i class="material-icons">arrow_upward</i></button>
-                <button class="Descubremas">Descubre Más</button>
+                <button class="Descubremas" ><a href="/main/explore.html"  >Descubre Más</a></button>
             </div>
 
-            
-                    
-
             <footer class="footer">
-                
-                
+                <div class="Columna1Footer">
+                    <p><strong>©Copyright 2021 PhotoFans</strong><p></p>
+                    </div>
+                <div class="Columna2Footer">
+                    <h3>Resdes Sociales</h3>
+                    <div class="FilaSocial">
+                        <img src="/imagenes/iconos/icons8_twitter.ico">
+                        <label >Twitter</label>
+                    </div>
+                    <div class="FilaSocial">
+                        <img src="/imagenes/iconos/icons8_facebook.ico">
+                        <label >Facebook</label>
+                    </div>
+                    <div class="FilaSocial">
+                        <img src="/imagenes/iconos/icons8_instagram.ico">
+                        <label >Instagram</label>
+                    </div>
+                    <div class="FilaSocial">
+                        <img src="/imagenes/iconos/icons8_pinterest.ico">
+                        <label >Pinterest</label>
+                    </div>
 
-                           
-                                <div class="Columna1Footer">
-                                    <h3>Mas informacion de la Pagina</h3>
-                                    <p>Somos una empresa que brinda a sus clientes excelentes fotografías para satisfacer sus necesidades.</p>
-                                </div>
-                                <div class="Columna2Footer">
-                                    <h3>Resdes Sociales</h3>
-                                    <div class="FilaSocial">
-                                        <img src="/imagenes/iconos/icons8_twitter.ico">
-                                        <label >Twitter</label>
-                                    </div>
-                                    <div class="FilaSocial">
-                                        <img src="/imagenes/iconos/icons8_facebook.ico">
-                                        <label >Facebook</label>
-                                    </div>
-                                    <div class="FilaSocial">
-                                        <img src="/imagenes/iconos/icons8_instagram.ico">
-                                        <label >Instagram</label>
-                                    </div>
-                                    <div class="FilaSocial">
-                                        <img src="/imagenes/iconos/icons8_pinterest.ico">
-                                        <label >Pinterest</label>
-                                    </div>
-
-                                </div>
+                </div>
 
 
-                                <div class="Columna3Footer">
-                                    <h3>Información</h3> <br>
-                                    <label>Telefono:</label> 
-                                    <label> +505-7840-58188</label> <br> <br>
-                                    <div class="Ubicacion"> 
-                                        <img src="/imagenes/iconos/icons8_marker.ico" >
-                                        <label >Ubicación: Villa Venezuela 2 cuadras abajo</label>
-                                    </div>
-                                    
-                                    
-                                    
-                                </div>
-                                
-                            
-                           
-                           
-                        
+                <div class="Columna3Footer">
+                    <div class="Ubicacion"> 
+                        <img src="/imagenes/iconos/icons8_marker.ico" >
+                        <label >Tu Ubicacion</label>
+                    </div>
+                    
+                </div>
+        
             </footer>
-
+                    
             <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
             <script src="/JavaScript/precarga.js"></script>
             <script src="/JavaScript/Calendario.js"></script>
             <script src="/JavaScript/VentanaModal.js"></script>
             <script src="/JavaScript/BotonHaciaArriba.js"></script>
-    
-        
-           
-       
-        
+            <script src="/JavaScript/validacion_perfil.js"></script>
+
     </body>
 </html>

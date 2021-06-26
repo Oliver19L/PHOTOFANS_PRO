@@ -1,0 +1,33 @@
+.contenedor_flex{
+    display: flex;
+    width: 90%;
+    height: 500px;
+    flex-flow: wrap;
+    align-items: center; 
+    justify-content: center;
+    background-color: white;
+}
+
+.contenedor_flex div.subir_foto
+{
+    height: 200px;
+    width: 200px;
+    margin-right: 10px;
+    background-image: url(/imagenes/Upload_image.png);
+    background-size: cover;
+    cursor: pointer;
+}
+
+.contenedor_flex div.form
+{
+    width: 300px;
+    height: 300px;
+    padding-right: 5px;
+    margin-left: 10px;
+    background-color: whitesmoke;
+}
+
+form
+{
+    width: 50;
+}

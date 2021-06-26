@@ -30,29 +30,29 @@ function checkInputs() {
 	const password2Value = password2.value.trim();
 	
 	if(usernameValue === '') {
-		setErrorFor(username, 'Username cannot be blank');
+		setErrorFor(username, 'Usuario no puede estar vacio.');
 	} else {
 		setSuccessFor(username);
 	}
 	
 	if(emailValue === '') {
-		setErrorFor(email, 'Email cannot be blank');
+		setErrorFor(email, 'Correo no puede estar vacio');
 	} else if (!isEmail(emailValue)) {
-		setErrorFor(email, 'Not a valid email');
+		setErrorFor(email, 'Correo invalido.');
 	} else {
 		setSuccessFor(email);
 	}
 	
 	if(passwordValue === '') {
-		setErrorFor(password, 'Password cannot be blank');
+		setErrorFor(password, 'Contraseña no puede estar vacia');
 	} else {
 		setSuccessFor(password);
 	}
 	
 	if(password2Value === '') {
-		setErrorFor(password2, 'Password2 cannot be blank');
+		setErrorFor(password2, 'Contraseña no puede estar vacia');
 	} else if(passwordValue !== password2Value) {
-		setErrorFor(password2, 'Passwords does not match');
+		setErrorFor(password2, 'Contraseña no coincide');
 	} else{
 		setSuccessFor(password2);
 	}
@@ -68,6 +68,7 @@ function setErrorFor(input, message) {
 function setSuccessFor(input) {
 	const formControl = input.parentElement;
 	formControl.className = 'form-control success';
+	document.getElementById('submit').setAttribute('/main/index.html',baseUrl+/id/+id);
 }
 	
 function isEmail(email) {

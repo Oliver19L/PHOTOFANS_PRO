@@ -5,38 +5,91 @@
     <title>PhotoFans Iniciar Sesion</title>
     <link rel="stylesheet" type="text/css" href="/css/styleMain.css">
     <link rel="stylesheet" type="text/css" href="/css/styleCategory.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="cabecera">
         <div class="contenedor"> 
-            <input type="image" src="/imagenes/logo_transparent 2.png ">
+          <!---->  <input type="image" src="/imagenes/Logo 1.png">
            <!--<h1 >PhotoFans</h1>--> 
            
             <nav class="nave">
                <ul>
                    <li><a href="/main/index.html">Inicio</a></li>
-                   <li><a href="/main/explore.html">Categorias</a></li>
+                   <li><a href="/main/explore.html">Categoria</a></li>
                    <li><a href="/main/upload.html">Subir</a></li>
-                   <li> <a href="/main/signup_signin.html">Iniciar sesion</a></li>
+                   <li> <a onclick="document.getElementById('loginSign').style.display='block'">Iniciar sesion</a></li>
+                   <li> <a href="/main/signup_signin.html">UNETE</a></li>
                </ul> 
             </nav>
         </div>
     </header> 
 
-    <div class="contenedor_flex">
-        <h2>
-            CATEGORIAS
-        </h2>
+    <h1 class="encabezado">
+        Categorias
+    </h1>
+
+    <section class="contenedor_flex">
+        <input class="cat_anime" type="button" value="Anime">
+
+        <input class="cat_animal" type="button" value="Animales">
+
+        <input class="cat_auto" type="button" value="Automoviles">
+
+        <input type="button" value="Artistas" class="cat_artista">
+
+        <input type="button" value="Arte" class="cat_arte">
+        
+        <input type="button" value="Amor" class="cat_amor">
+        
+        <input type="button" value="Deportes" class="cat_deporte">
+
+        <input type="button" value="Motocicletas" class="cat_motocicleta">
+
+        <input type="button" value="Musica" class="cat_musica">
+        
+        <input type="button" value="Naturaleza" div class="cat_naturaleza">
+
+        <input type="button" value="Universo" class="cat_universo">
        
-        <div>
-            Animales:
+        <input type="button" value="Tecnologia" class="cat_tecnologia">
+    </section>
+
+    <footer class="footer">
+
+        <div class="Columna1Footer">
+            <p><strong>©Copyright 2021 PhotoFans</strong><p>
         </div>
-        <div>
-            Automoviles:
+        <div class="Columna2Footer">
+            <h3>Resdes Sociales</h3>
+            <div class="FilaSocial">
+                <img src="/imagenes/iconos/icons8_twitter.ico">
+                <label >Twitter</label>
+            </div>
+            <div class="FilaSocial">
+                <img src="/imagenes/iconos/icons8_facebook.ico">
+                <label >Facebook</label>
+            </div>
+            <div class="FilaSocial">
+                <img src="/imagenes/iconos/icons8_instagram.ico">
+                <label >Instagram</label>
+            </div>
+            <div class="FilaSocial">
+                <img src="/imagenes/iconos/icons8_pinterest.ico">
+                <label >Pinterest</label>
+            </div>
+
         </div>
-        <div>
-            Artistas:
+
+
+        <div class="Columna3Footer">
+            <div class="Ubicacion"> 
+                <img src="/imagenes/iconos/icons8_marker.ico" >
+                <label >Tu Ubicacion</label>
+            </div>
+            
         </div>
-    </div>
+
+    </footer>
 </body>
 </html>
